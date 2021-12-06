@@ -15,11 +15,11 @@ namespace AppSevenFunction
         [FunctionName("AppSevenFunction")]
         public static async Task<IActionResult> Run(
             [HttpTrigger(AuthorizationLevel.Function, "get", "post", Route = "Name/{name}")] HttpRequest req,
-            ILogger log)
+            ILogger log, string name)
         {
             User user = new User();
-
-            return new OkObjectResult("");
+            user.UserName = name;
+            return new OkObjectResult(user);
         }
     }
 }
