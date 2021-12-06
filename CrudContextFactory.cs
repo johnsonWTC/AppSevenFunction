@@ -1,5 +1,5 @@
 ﻿
-using AppSix;
+using AppSevenFunction;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Design;
 using System;

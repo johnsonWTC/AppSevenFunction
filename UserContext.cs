@@ -18,6 +18,6 @@ namespace AppSevenFunction
             optionsBuilder.UseSqlServer("Data Source = ASSET - 10422\\SQLEXPRESS; Initial Catalog = AppSeven; Integrated Security = True");
 
 
-
+        }
     }
 }
