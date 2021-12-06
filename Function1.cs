@@ -19,6 +19,9 @@ namespace AppSevenFunction
         {
             User user = new User();
             user.UserName = name;
+            UserContext userContext = new UserContext();
+            userContext.Add(user);
+            userContext.SaveChanges();
             return new OkObjectResult(user);
         }
     }
