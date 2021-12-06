@@ -14,13 +14,10 @@ namespace AppSevenFunction
     {
         [FunctionName("AppSevenFunction")]
         public static async Task<IActionResult> Run(
-            [HttpTrigger(AuthorizationLevel.Function, "get", "post", Route = null)] HttpRequest req,
+            [HttpTrigger(AuthorizationLevel.Function, "get", "post", Route = "Name/{name}")] HttpRequest req,
             ILogger log)
         {
             User user = new User();
-            string requestBody = await new StreamReader(req.Body).ReadToEndAsync();
-            dynamic data = JsonConvert.DeserializeObject(requestBody);
-
 
             return new OkObjectResult("");
         }
