@@ -15,9 +15,7 @@ namespace AppSevenFunction
         public DbSet<User> Users { get; set; }
         protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
         {
-            optionsBuilder.UseSqlServer("Data Source = ASSET - 10422\\SQLEXPRESS; Initial Catalog = AppSeven; Integrated Security = True");
-
-
+            optionsBuilder.UseSqlServer("Data Source=ASSET-10422\\SQLEXPRESS;Initial Catalog=AppSevenFuction;Integrated Security=True");
         }
     }
 }

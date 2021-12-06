@@ -4,7 +4,7 @@ using System;
 using System.Collections.Generic;
 using System.Text;
 
-[assembly: FunctionsStartup(typeof(AppSix.AppSevenFunction))]
+[assembly: FunctionsStartup(typeof(AppSevenFunction.Startup))]
 
 
 namespace AppSevenFunction
